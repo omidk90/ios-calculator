@@ -21,7 +21,13 @@ body {
   font-size: 1rem;
 }
 .main-container {
-  background-color: red;
+  background: linear-gradient(
+    90deg,
+    hsla(234, 80%, 88%, 1) 0%,
+    hsla(340, 68%, 88%, 1) 50%,
+    hsla(342, 72%, 85%, 1) 100%
+  );
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +37,7 @@ body {
     width: 100%;
     max-width: 242px;
     background-color: #4c5152;
-    border-radius: 0.6rem;
+    border-radius: 0.6m;
     border: solid 0.063rem #080808;
     box-shadow: 0 0 0.2rem inset #828281;
     overflow: hidden;
