@@ -1,0 +1,25 @@
+{
+  "name": "ios-calculator",
+  "version": "1.0.0",
+  "description": "This project aims to replicate the functionality and design of the default iOS calculator application using web technologies such as HTML, SCSS, and JavaScript. The goal is to create a responsive and visually appealing calculator interface that closely resembles the user experience of the iOS platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omidk90/ios-calculator.git"
+  },
+  "keywords": [
+    "IOS Calculator",
+    "HTML",
+    "SCSS",
+    "JS"
+  ],
+  "author": "Omid Kashani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omidk90/ios-calculator/issues"
+  },
+  "homepage": "https://github.com/omidk90/ios-calculator#readme"
+}

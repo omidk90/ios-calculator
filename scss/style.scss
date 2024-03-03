@@ -1,0 +1,128 @@
+$btn-color: #ebebeb;
+$btn-background: #7b7c7b;
+$btn-font-size: 1.625rem;
+$border-color: #50504f;
+*,
+*::before,
+*::after,
+button {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+    "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+.main-container {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .main-wrapper {
+    width: 100%;
+    max-width: 242px;
+    background-color: #4c5152;
+    border-radius: 0.6rem;
+    border: solid 0.063rem #080808;
+    box-shadow: 0 0 0.2rem inset #828281;
+    overflow: hidden;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.8);
+
+    div {
+      width: 100%;
+    }
+
+    .top-btn-container {
+      .top-btn-items {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.625rem;
+
+        &:hover span {
+          opacity: 1;
+        }
+
+        div {
+          font-size: 0.8rem;
+          width: 0.875rem;
+          height: 0.875rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+
+          span {
+            color: #4c5051;
+            opacity: 0;
+            position: relative;
+            top: -1px;
+          }
+        }
+        .top-btn-close {
+          background-color: #fe5f57;
+        }
+        .top-btn-plus {
+          background-color: #28c840;
+        }
+        .top-btn-min {
+          background-color: #febc2e;
+        }
+      }
+    }
+
+    .input-container {
+      input {
+        background-color: transparent;
+        color: $btn-color;
+        font-size: 2rem;
+        display: block;
+        text-align: right;
+        padding: 0 1rem 1rem;
+        width: inherit;
+      }
+    }
+
+    .digits-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .digit-btn {
+        width: 60px;
+        height: 50px;
+        background-color: $btn-background;
+        color: $btn-color;
+        font-size: $btn-font-size;
+        background-color: #7d7d7c;
+        border-right: solid 0.063rem #50504f;
+        border-bottom: solid 0.063rem #50504f;
+
+        &:nth-child(4n) {
+          border-right: none;
+        }
+      }
+      .digit-btn.top-color {
+        background-color: #585f63;
+      }
+      .digit-btn.operators {
+        background-color: #ff9f0b;
+      }
+      .digit-btn.zero {
+        grid-column: 1 / span 2;
+        width: 100%;
+      }
+      .digit-btn.equal {
+        border-right: 0;
+      }
+    }
+  }
+}
