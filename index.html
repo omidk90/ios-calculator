@@ -24,33 +24,35 @@
                     </div>
                 </div>
             </div>
-            <div class="input-container">
-                <input type="text" class="inputScreen" name="inputScreen">
+            <div class="display">
+                <input type="text" id="display" name="display" value="0">
             </div>
             <div class="digits-container">
-                <button type="button" class="digit-btn top-color" id="clear" value="AC">AC</button>
-                <button type="button" class="digit-btn top-color" value="±">±</button>
-                <button type="button" class="digit-btn top-color" value="%">%</button>
-                <button type="button" class="digit-btn operators" value=" / ">÷</button>
-                <button type="button" class="digit-btn" value="7">7</button>
-                <button type="button" class="digit-btn" value="8">8</button>
-                <button type="button" class="digit-btn" value="9">9</button>
-                <button type="button" class="digit-btn operators" value=" * ">x</button>
-                <button type="button" class="digit-btn" value="4">4</button>
-                <button type="button" class="digit-btn" value="5">5</button>
-                <button type="button" class="digit-btn" value="6">6</button>
-                <button type="button" class="digit-btn operators" value=" - ">-</button>
-                <button type="button" class="digit-btn" value="1">1</button>
-                <button type="button" class="digit-btn" value="2">2</button>
-                <button type="button" class="digit-btn" value="3">3</button>
-                <button type="button" class="digit-btn operators" value=" + ">+</button>
-                <button type="button" class="digit-btn zero" value="0">0</button>
-                <button type="button" class="digit-btn" value=".">.</button>
-                <button type="button" class="digit-btn equal operators" id="calculate" value="=">=</button>
+                <button type="button" class="digit-btn top-color" id="clear" value="AC"
+                    onclick="display.value = '' ">AC</button>
+                <button type="button" class="digit-btn top-color" value="±" onclick="display.value += '±' ">+/-</button>
+                <button type="button" class="digit-btn top-color" value="%" onclick="display.value += '%' ">%</button>
+                <button type="button" class="digit-btn operators" value="/" onclick="display.value += '/' ">÷</button>
+                <button type="button" class="digit-btn" value="7" onclick="display.value += '7' ">7</button>
+                <button type="button" class="digit-btn" value="8" onclick="display.value += '8' ">8</button>
+                <button type="button" class="digit-btn" value="9" onclick="display.value += '9' ">9</button>
+                <button type="button" class="digit-btn operators" value="*" onclick="display.value += '*' ">x</button>
+                <button type="button" class="digit-btn" value="4" onclick="display.value += '4' ">4</button>
+                <button type="button" class="digit-btn" value="5" onclick="display.value += '5' ">5</button>
+                <button type="button" class="digit-btn" value="6" onclick="display.value += '6' ">6</button>
+                <button type="button" class="digit-btn operators" value="-" onclick="display.value += '-' ">-</button>
+                <button type="button" class="digit-btn" value="1" onclick="display.value += '1' ">1</button>
+                <button type="button" class="digit-btn" value="2" onclick="display.value += '2' ">2</button>
+                <button type="button" class="digit-btn" value="3" onclick="display.value += '3' ">3</button>
+                <button type="button" class="digit-btn operators" value="+" onclick="display.value += '+' ">+</button>
+                <button type="button" class="digit-btn zero" value="0" onclick="display.value += '0' ">0</button>
+                <button type="button" class="digit-btn" value="." onclick="display.value += '.' ">.</button>
+                <button type="button" class="digit-btn equal operators" id="calculate" value="="
+                    onclick="display.value = eval(display.value) ">=</button>
             </div>
         </div>
     </div>
-    <script src=""></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
